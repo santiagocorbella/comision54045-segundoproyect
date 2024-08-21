@@ -1,0 +1,35 @@
+body {
+    background-image: linear-gradient(to left, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5);
+    
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: aliceblue;
+    align-items: center;
+    justify-content: center; 
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+.principalHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+ 
+
+    
