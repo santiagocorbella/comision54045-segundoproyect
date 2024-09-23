@@ -1,30 +1,30 @@
 const products = [
     { 
       id: '1',
-      name: 'selva negra',
+      name: 'Selva Negra',
       price: 2000,
-      category: 'torta',
+      category: 'torta selva negra',
       img:'https://www.paulinacocina.net/wp-content/uploads/2022/04/selva-negra-receta-1-800x534.jpg',
       stock: 5,
       description:'Torta de chocolate , crema y cereza'
     },
     {
         id: '2',
-      name: 'bombones suizos( se vende por paquete x 12 unidades)',
+      name: 'Marquise',
       price: 1000,
-      category: 'bombones',
-      img:'https://acdn.mitiendanube.com/stores/001/122/764/products/h66_1-600x6001-2ed3f5536cb3e98cab16022802390080-1024-1024.jpg',
+      category: 'torta marquise',
+      img:'https://truffle-assets.tastemadecontent.net/79143177-marquise-1920x1080-thumbnail.jpg',
       stock: 30,
-      description:'Bombones suizos de cholate negro y blanco'
+      description:'Torta de chocolate con merengue'
     },
     {
       id: '3',
-    name: 'Facturas(se vende por docena)',
+    name: 'Rogel',
     price: 1300,
-    category: 'facturas',
-    img:'https://pandonjuan.com.ar/wp-content/uploads/2023/03/factura-membrillo.jpg',
+    category: 'torta rogel',
+    img:'https://www.clarin.com/img/2020/08/27/PKMxPZps0_1200x630__1.jpg',
     stock: 30,
-    description:'Facturas con crema y dulce de leche'
+    description:'torta de dulce de leche y merengue italiano'
   },
 ]
 
@@ -40,7 +40,7 @@ export const getProductsByCategory = (categoryId) => {
   return new Promise((resolve) => {
       setTimeout(() => {
           resolve(products.filter(prod => prod.category === categoryId))
-      }, 500)
+      }, 1500)
   })
 }
 

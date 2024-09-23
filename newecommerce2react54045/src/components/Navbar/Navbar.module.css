@@ -3,18 +3,22 @@ body {
     
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 h1 {
+    color:aliceblue;
     text-decoration: underline;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+h2 {
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 a {
     color: aliceblue;
@@ -30,6 +34,4 @@ a {
     justify-content: center;
     align-items: center;
 } 
- 
-
-    
+   
