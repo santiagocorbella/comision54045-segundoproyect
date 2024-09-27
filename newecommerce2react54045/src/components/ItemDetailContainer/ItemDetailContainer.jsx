@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
     
     return (
         <main>
-            <h1 style={{color:'white'}}>Detalle de producto</h1>
+            <h1 style={{color:'black'}}>Detalle de producto</h1>
             <ItemDetail {...product}/>
         </main>
     )

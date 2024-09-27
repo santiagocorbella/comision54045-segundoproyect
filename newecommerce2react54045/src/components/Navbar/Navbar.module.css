@@ -1,6 +1,7 @@
 body {
-    background-image: linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5);
-    
+    /*background-image: linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5);
+    */
+    background-image: linear-gradient(to right, #0d0d0d, #0d0d0d, #0d0d0d, #0d0d0d, #0d0d0d);
 }
 
 .header {
