@@ -1,7 +1,7 @@
 const Notification = ({notificacionData}) => {
 
   const colors = {
-    success: 'purple',
+    success: 'blue',
     error: 'red',
     warning: 'orange',
     info: 'blue'

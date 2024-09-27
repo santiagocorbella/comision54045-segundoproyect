@@ -1,8 +1,13 @@
 body {
-    background-image: linear-gradient(to left, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5);
+    background-image: linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5);
     
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 h1 {
