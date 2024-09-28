@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
-import { getDocs, collection, query, where, documentId, writeBatch, addDoc} from "firebase/firestore"
+import { getDocs, collection, query, where, documentId, writeBatch, addDoc, Timestamp} from "firebase/firestore"
 import { db } from "../../services/firebase/firebaseConfig"
 
 const Checkout = () => {
@@ -27,7 +27,8 @@ const Checkout = () => {
     const objOrder = {
       buyer: form,
       items: cart, 
-      total  
+      total,
+      date: Timestamp.fromDate(new Date())  
     };
     console.log('Order Created:', objOrder);
 
