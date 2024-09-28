@@ -72,18 +72,18 @@ setLoading(false)
 }
 
 if(loading) {
-return <h1>Su orden esta siendo generada...</h1>
+return <h1 style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>Su orden esta siendo generada...</h1>
 }
 
 if(orderId) {
-return <h1>El id de su orden es: {orderId}</h1>
+return <h1 style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>El id de su orden es: {orderId}</h1>
 }
 
   return (
-    <div>
-      <h1>Checkout</h1>
+    <div style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>
+      <h1 style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}} >Checkout</h1>
       
-      <form>
+      <form style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>
         <label>
           Name:
           <input 

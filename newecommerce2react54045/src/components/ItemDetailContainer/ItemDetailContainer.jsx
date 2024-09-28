@@ -27,10 +27,12 @@ const ItemDetailContainer = () => {
     }, [itemId])
     
     return (
+       <div style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}> 
         <main>
-            <h1 style={{color:'black'}}>Detalle de producto</h1>
+            <h1 style={{color:'white'}}>Detalle de producto</h1>
             <ItemDetail {...product}/>
         </main>
+       </div> 
     )
 }
 

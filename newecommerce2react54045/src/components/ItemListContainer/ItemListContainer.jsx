@@ -48,14 +48,16 @@ const ItemListContainer = ({ greeting}) => {
     }, [categoryId])
 
     if (loading) {
-      return <h1>Cargando listado de productos...</h1>
+      return <h1 style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>Cargando listado de productos...</h1>
     }
 
      return (
-      <main>
+      
+      <main style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>
         <h1>{greeting}</h1>
         <ItemList products={products}/>
       </main>
+     
      )
    }
    

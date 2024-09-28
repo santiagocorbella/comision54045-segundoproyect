@@ -6,7 +6,7 @@ const CartView = () => {
     const { cart, removeItem } = useContext(CartContext)
     
     return (
-        <div>
+        <div style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>
             <h1>Cart</h1>
             <section>
             {

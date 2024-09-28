@@ -15,12 +15,12 @@ const Notification = ({notificacionData}) => {
   }  
     const notificationStyle = {
       position: 'absolute',
-      top: 150,
-      right: 30,
+      top: 320,
+      right: 35,
       backgroundColor: colors[notificacionData.type],
       color: 'yellow',
-      padding: 20,
-      borderRadius: 5
+      padding: 4,
+      borderRadius: 2
     }
   
     return (
