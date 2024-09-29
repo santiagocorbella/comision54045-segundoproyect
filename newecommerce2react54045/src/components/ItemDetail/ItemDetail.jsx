@@ -1,28 +1,3 @@
-// Voy a comentar desde la línea 1 hasta la 24 y voy a copiar lo que puso el profe en su codigo.
-
-/*import { useState, useContext } from "react"
-import ItemCount from "../ItemCount/ItemCount"
-import { CartContext, Context } from "../../App"
-
-const ItemDetail =({ name, category, price, img, description,stock }) => {
-
-    const { setCart } = useContext(CartContext)
-    const value = useContext(Context)
-    console.log (value)
-    return (
-        <article>
-            <img src={img} style={{width: 100}}/>
-            <h3>{name}</h3>
-            <h4>categoria: {category}</h4>
-            <h4>${price}</h4>
-            <h4>Description: {description}</h4>
-            <ItemCount stock={stock} />
-        </article>    
-        )
-      }      
-      
-      export default ItemDetail*/
-
 import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'

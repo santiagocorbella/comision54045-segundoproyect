@@ -1,17 +1,8 @@
-import { useState, useEffect} from "react"
+import { useState } from "react"
 
 const MercadoLibre = () => {
     const [items, setItems] = useState([])
     const [input, setInput] = useState('')
-
-    //useEffect(() => {
-    //fetch('https://api.mercadolibre.com/sites/MLA/search?q=celulares')
-    // .then(response => {
-    //return response.json()
-       //}) 
-         //.then(json => setItems (json.results))
-        // .catch(error => console.error(error))
-    //}, [])
 
     const handleOnSubmit = (e) => {
         e.preventDefault()

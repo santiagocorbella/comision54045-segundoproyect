@@ -34,12 +34,6 @@ const Form = ({ formData, onChange, errors, validateForm }) => {
     const handleSubmit = (event) => {
         event.preventDefault()
 
-        // if(validateForm) {
-        //     validateForm()
-        // }
-
-        // validateForm ? validateForm() : null 
-
         validateForm && validateForm();
 
     }

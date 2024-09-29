@@ -15,17 +15,3 @@ const Item = ({ id, name, category, price, img}) => {
 
 
 
-/*import { Link } from "react-router-dom"
-
-const Item = ({id, name, img, price}) => {
-    return (
-        <div>
-            <h2>{name}</h2>
-            <img src={img} style={{width:200}}/>
-            <h3>Precio: ${price}</h3>
-            <Link to={`/item/${id}`}>ver detalle</Link>
-        </div>
-    )
-}
-
-export default Item */

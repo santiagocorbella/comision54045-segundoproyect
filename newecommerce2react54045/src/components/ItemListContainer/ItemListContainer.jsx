@@ -1,5 +1,4 @@
 import {useState,useEffect } from "react"
-//import { getProducts, getProductsByCategory } from "../../asyncMock"
 import ItemList from "../ItemList/ItemList"
 import {useParams } from "react-router-dom"
 import { useNotification } from "../../notification/hooks/useNotification"
@@ -14,14 +13,14 @@ const ItemListContainer = ({ greeting}) => {
   const {categoryId } = useParams()
 
   const { showNotification } = useNotification()
-//Empieza el useEffect que copíé y pegué del trabajo anterior
+
   useEffect(() => {
     setTimeout(() => {
     setRender(prev => !prev)
     setLoading(render)
      } , 2000)  
 }, [])
-//termina acá
+
   useEffect(() => {
     
     const productsCollection = categoryId ? (
@@ -63,45 +62,3 @@ const ItemListContainer = ({ greeting}) => {
    
 export default ItemListContainer  
 
-// LO QUE ME QUEDÓ DE asyncMOCK
-//const asyncFunction = categoryId ? getProductsByCategory : getProducts
-
-    //asyncFunction(categoryId)
-         //.then(result => {
-            //setProducts(result)
-         //})
-         //.catch(error => {
-            //showNotification('error', 'Hubo un error cargando los productos')
-         //})  
-         //.finally (() => {
-          //setLoading(false)
-         //}) 
-// TERMINA ACÁ LO DE asyncMOCK
-
-
-/*import { useState, useEffect } from "react"
-import { getProducts } from "../../asyncMock"
-import ItemList from "../ItemList/ItemList"
-
-const ItemListContainer = ({greeting}) => {
-    const [products, setProducts] = useState([])
-
-    useEffect(() => {
-        getProducts()
-          .then(result => {
-            setProducts(result)
-          })
-          .catch(error => {
-            console.log(error)
-          })  
-        }, [])
-
-        return (
-          <div>
-            <h1>{ greeting }</h1>
-            <ItemList products = { products } />
-      </div>
-    )
-   }
-
-export default ItemListContainer*/

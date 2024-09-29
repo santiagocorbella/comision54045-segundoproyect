@@ -1,18 +1,7 @@
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 
 const ButtonDos = () => {
     const buttonRef = useRef()
-
-   // useEffect(() => {
-        //console.log(buttonRef)
-      //const boton = buttonRef.current
-
-      //const handleClick = () => console.log('hice click')
-
-      //boton.addEventListener('click', handleClick)
-      // }
-
-    //}, [])
 
     console.log(buttonRef)
       return ( 
