@@ -6,8 +6,9 @@ import { db } from "../../services/firebase/firebaseConfig";
 const Checkout = () => {
   const [loading, setLoading] = useState(false);
   const [orderId, setOrderId] = useState(null);
+  const [orderTotal, setOrderTotal] = useState(null); // Estado para el total de la orden
   const [error, setError] = useState(null);
-  const { cart, total, clearCart } = useContext(CartContext); //Carrito , total de la compra y limpiar carrito 
+  const { cart, total, clearCart } = useContext(CartContext);
   const [form, setForm] = useState({ 
     name: '', 
     confirmName: '', 
@@ -98,6 +99,7 @@ const Checkout = () => {
 
         clearCart();
         setOrderId(id);
+        setOrderTotal(total); // Guardar el total de la orden
       } else {
         setError('Algunos productos están fuera de stock'); 
       }
@@ -114,12 +116,17 @@ const Checkout = () => {
   }
 
   if (orderId) {
-    return <h1 style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>El ID de su orden es: {orderId}</h1>;
+    return (
+      <div style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>
+        <h1>El ID de su orden es: {orderId}</h1>
+        <h2>Total de la compra: ${orderTotal}</h2> {/* Mostrar el total acá */}
+      </div>
+    );
   }
 
   return (
     <div style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>
-      <h1 style={{ background: 'linear-gradient(to right, hsl(60, 93%, 50%), #f68e08, #f84b06, #f70606, #de06c5)'}}>Checkout</h1>
+      <h1>Checkout</h1>
       {error && <p style={{ color: 'blue' }}>{error}</p>}
       <form>
         <label>
@@ -167,6 +174,5 @@ const Checkout = () => {
   );
 };
 
-export default Checkout
-
+export default Checkout;
 
